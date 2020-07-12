@@ -1,0 +1,6 @@
+## Interface: 11200
+## Title: TW Power Bar
+## Author: Xerron/Er
+## Version: 1.0.0.0
+## Notes: Floating Power Bar
+TWPowerBar.xml
