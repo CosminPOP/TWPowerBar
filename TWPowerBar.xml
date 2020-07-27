@@ -12,12 +12,44 @@
         </Anchors>
         <Frames>
 
-            <Frame name="$parentPower" framestrata="LOW" hidden="true">
+            <Frame name="$parentHP" framestrata="LOW" hidden="false">
                 <Size>
                     <AbsDimension x="50" y="20"/>
                 </Size>
                 <Anchors>
                     <Anchor point="LEFT"/>
+                </Anchors>
+                <Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" tile="true">
+                </Backdrop>
+                <Layers>
+                    <Layer level="OVERLAY">
+                        <FontString name="$parentText" inherits="GameFontNormal"
+                                    text="" hidden="false">
+                            <Size>
+                                <AbsDimension x="200" y="20"/>
+                            </Size>
+                            <Anchors>
+                                <Anchor point="LEFT">
+                                    <Offset>
+                                        <AbsDimension x="0" y="0"/>
+                                    </Offset>
+                                </Anchor>
+                            </Anchors>
+                        </FontString>
+                    </Layer>
+                </Layers>
+            </Frame>
+
+            <Frame name="$parentPower" framestrata="LOW" hidden="false">
+                <Size>
+                    <AbsDimension x="50" y="20"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="LEFT">
+                        <Offset>
+                            <AbsDimension x="0" y="-20"/>
+                        </Offset>
+                    </Anchor>
                 </Anchors>
                 <Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" tile="true">
                 </Backdrop>
@@ -42,10 +74,14 @@
 
             <Frame name="$parentBackground"  framestrata="BACKGROUND" hidden="true">
                 <Size>
-                    <AbsDimension x="200" y="20"/>
+                    <AbsDimension x="200" y="40"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="CENTER"/>
+                    <Anchor point="CENTER">
+                        <Offset>
+                            <AbsDimension x="0" y="-10"/>
+                        </Offset>
+                    </Anchor>
                 </Anchors>
                 <Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" tile="true">
                     <Color r="0" g="0" b="0" a="0.7"/>

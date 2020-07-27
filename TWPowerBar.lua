@@ -1,7 +1,11 @@
 function updatePowerBar()
 
     local power = UnitMana('player')
+--    UnitHealthMax(target) - UnitHealth(target)
     getglobal('TWPowerBarPower'):SetWidth(power * 200 / UnitManaMax('player'))
+    getglobal('TWPowerBarHP'):SetWidth(UnitHealth('player') * 200 / UnitHealthMax('player'))
+    getglobal('TWPowerBarHP'):SetBackdropColor(0.06,  1, 0.06,1)
+--    getglobal('TWPowerBarHPText'):SetBackdropColor(0.06,  1, 0.06,1)
 
     if UnitPowerType('player') == 0 then --mana
         getglobal('TWPowerBarPower'):SetBackdropColor(0.06, 0.06, 1, 1)
