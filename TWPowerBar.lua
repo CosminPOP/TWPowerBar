@@ -2,7 +2,7 @@ local TWPB = CreateFrame("Frame")
 
 TWPB:RegisterEvent("ADDON_LOADED")
 
-LCVoteFrame:SetScript("OnEvent", function()
+TWPB:SetScript("OnEvent", function()
     if event then
         if event == "ADDON_LOADED" and arg1 == 'TWPowerBar' then
             if not TWPB_HP then TWPB_HP = 1 end
