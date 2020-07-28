@@ -14,7 +14,7 @@
 
             <Frame name="$parentHP" framestrata="LOW" hidden="false">
                 <Size>
-                    <AbsDimension x="50" y="20"/>
+                    <AbsDimension x="50" y="15"/>
                 </Size>
                 <Anchors>
                     <Anchor point="LEFT"/>
@@ -24,7 +24,7 @@
                 <Layers>
                     <Layer level="OVERLAY">
                         <FontString name="$parentText" inherits="GameFontNormal"
-                                    text="" hidden="false">
+                                    text="hp/hp" hidden="false">
                             <Size>
                                 <AbsDimension x="200" y="20"/>
                             </Size>
@@ -42,12 +42,12 @@
 
             <Frame name="$parentPower" framestrata="LOW" hidden="false">
                 <Size>
-                    <AbsDimension x="50" y="20"/>
+                    <AbsDimension x="50" y="15"/>
                 </Size>
                 <Anchors>
                     <Anchor point="LEFT">
                         <Offset>
-                            <AbsDimension x="0" y="-20"/>
+                            <AbsDimension x="0" y="-15"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
@@ -74,12 +74,12 @@
 
             <Frame name="$parentBackground"  framestrata="BACKGROUND" hidden="true">
                 <Size>
-                    <AbsDimension x="200" y="40"/>
+                    <AbsDimension x="200" y="30"/>
                 </Size>
                 <Anchors>
                     <Anchor point="CENTER">
                         <Offset>
-                            <AbsDimension x="0" y="-10"/>
+                            <AbsDimension x="0" y="-8"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
