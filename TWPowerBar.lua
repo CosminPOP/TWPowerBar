@@ -55,7 +55,7 @@ function updatePowerBar()
 
     local power = UnitMana('player')
 
-    getglobal("TWPowerBarHPText"):SetText(UnitHealth('player') .. '/' .. UnitHealthMax('player'))
+    getglobal("TWPowerBarHPText"):SetText()
 
     getglobal('TWPowerBarPower'):SetWidth(power * 200 / UnitManaMax('player'))
     getglobal('TWPowerBarHP'):SetWidth(UnitHealth('player') * 200 / UnitHealthMax('player'))
@@ -70,7 +70,7 @@ function updatePowerBar()
 
     if UnitPowerType('player') == 1 then --rage
         getglobal('TWPowerBarPower'):SetBackdropColor(1, 0.06, 0.06, 1)
-        if power > 0 then
+        if power > 0 or UnitAffectingCombat('player') then
             getglobal('TWPowerBarBackground'):Show()
             getglobal('TWPowerBarPower'):Show()
             getglobal('TWPowerBarPowerText'):SetText(power)

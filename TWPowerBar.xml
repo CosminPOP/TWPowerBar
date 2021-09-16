@@ -17,9 +17,22 @@
                     <AbsDimension x="50" y="15"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="LEFT"/>
+                    <Anchor point="LEFT">
+                        <Offset>
+                            <AbsDimension x="0" y="-2"/>
+                        </Offset>
+                    </Anchor>
                 </Anchors>
-                <Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" tile="true">
+                <Backdrop bgFile="Interface\TargetingFrame\UI-StatusBar" tile="true">
+                    <EdgeSize>
+                        <AbsValue val="16"/>
+                    </EdgeSize>
+                    <TileSize>
+                        <AbsValue val="200"/>
+                    </TileSize>
+                    <BackgroundInsets>
+                        <AbsInset left="4" right="4" top="4" bottom="4"/>
+                    </BackgroundInsets>
                 </Backdrop>
                 <Layers>
                     <Layer level="OVERLAY">
@@ -47,11 +60,20 @@
                 <Anchors>
                     <Anchor point="LEFT">
                         <Offset>
-                            <AbsDimension x="0" y="-15"/>
+                            <AbsDimension x="0" y="-10"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
-                <Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" tile="true">
+                <Backdrop bgFile="Interface\TargetingFrame\UI-StatusBar" tile="true">
+                    <EdgeSize>
+                        <AbsValue val="16"/>
+                    </EdgeSize>
+                    <TileSize>
+                        <AbsValue val="200"/>
+                    </TileSize>
+                    <BackgroundInsets>
+                        <AbsInset left="4" right="4" top="4" bottom="4"/>
+                    </BackgroundInsets>
                 </Backdrop>
                 <Layers>
                     <Layer level="OVERLAY">
@@ -74,12 +96,12 @@
 
             <Frame name="$parentBackground"  framestrata="BACKGROUND" hidden="true">
                 <Size>
-                    <AbsDimension x="200" y="30"/>
+                    <AbsDimension x="198" y="20"/>
                 </Size>
                 <Anchors>
                     <Anchor point="CENTER">
                         <Offset>
-                            <AbsDimension x="0" y="-8"/>
+                            <AbsDimension x="0" y="-6"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
@@ -87,8 +109,6 @@
                     <Color r="0" g="0" b="0" a="0.7"/>
                 </Backdrop>
             </Frame>
-
-
 
         </Frames>
         <Scripts>
